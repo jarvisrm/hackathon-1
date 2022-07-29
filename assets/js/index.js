@@ -4,7 +4,7 @@ const iconMenu = document.querySelector('.icon-menu');
 
 iconMenu.addEventListener('click',()=>{
 
-    let menu = document.querySelector('#menu');
+    let menu = document.querySelector('#menu-mobile');
     let main = document.querySelector('main')
 
     if (menu.classList.contains('hide')){
@@ -31,5 +31,8 @@ function comunidade() {
 function home(){
     window.location.href = 'index.html'
 }
+
+
+
 
 
