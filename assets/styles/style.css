@@ -28,14 +28,25 @@ header {
     flex-direction: row;
     margin-bottom: 10px;
     padding: 5px;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
     margin-top: 2px;
     width: 140px;
     height: 80px;
+}
+
+#menu-desktop{
+    display: flex;
+    font-size: 20px;
+    width: 100%;
+    justify-content: flex-end;  
+}
+
+#menu-desktop a{
+    margin-left: 50px;
 }
 
 .menu {
@@ -73,8 +84,8 @@ header {
     font-size: 23px;
     color: white;
     cursor: pointer;
+    display: none;
 }
-
 .menu-ativado {
     margin: 155px 30px 0;
     transition: 1s;
@@ -218,4 +229,15 @@ h1 {
 
 main {
     height: 100vh;
+}
+
+
+@media(max-width:600px){
+    .icon-menu svg{
+        display: inline;
+    }
+
+    #menu-desktop{
+        display: none;
+    }
 }
